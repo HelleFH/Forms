@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+form {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.form-error {
+    color: red;
+    font-size: 14;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.pass-help {
+    font-size: 14px;
+    font-style: italic;
+    color: grey;
+}
+
+
+.pass-success {
+    padding: 10px;
+    background-color: rgb(172, 224, 172);
+}
+
+
+.msg {
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+form input[type=submit] {
+    height: 45px;
+    background-color: rgb(32, 32, 124);
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+
+
+
+
+/* Styling som aktiveres, hvis felterne er udfyldt korrekt */
+
+/* 
+input:valid {
+    border: 2px dashed green;
+}
+ */
+
+/* For at se ovenstående styling, bliver vi nødt til at gøre denne transparent */
+
+input:focus {
+    outline: transparent;
+}
