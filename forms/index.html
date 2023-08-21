@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JS -->
+   <script src="js/form.js" defer></script>
+</head>
+<body>
+    <h1>Opret bruger</h1>
+    <form id="create-user">
+        <label>Fornavn
+            <input type="text" name="firstName">
+            <div id="firstNameError" class="form-error"></div>
+
+        </label>
+        
+
+        <label>Efternavn
+            <input type="text" name="lastName">
+            <div id="lastNameError" class="form-error"></div>
+        </label>
+
+        <label>Alder
+            <input type="number" name="age">
+            <div id="ageError" class="form-error"></div>
+
+        </label>
+
+        <label>Email
+            <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <div id="emailError" class="form-error"></div>
+
+        </label>
+
+
+        <div class="pass">
+
+            <label>Adgangskode <span class="pass-help">minimum 3 karakterer</span>
+                <input type="password" name="password" autocomplete="off">
+                <div id="passwordError" class="form-error"></div>
+
+            </label>
+
+            <label>Gentag Adgangskode
+                <input type="password" name="passwordRepeat" autocomplete="off">
+                <div id="passwordRepeatError" class="form-error"></div>
+
+            </label>
+
+        </div>
+
+        <input type="submit" name="submit" value="Opret Bruger">
+
+    </form>
+
+    <div class="msg"></div>
+
+    
+</body>
+</html>
