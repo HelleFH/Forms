@@ -33,47 +33,47 @@ document.querySelector("#create-user").addEventListener("submit", function(event
     var isValid = true;
   
     if (!firstName) {
-        document.getElementById("firstNameError").textContent = "Indtast venligst dit fornavn";
+        document.getElementById("firstNameError").textContent = "Please enter your first name";
         firstNameInput.focus();
         isValid = false;
     } else if (!namePattern.test(firstName)) {
-        document.getElementById("firstNameError").textContent = "Indtast venligst et gyldigt fornavn";
+        document.getElementById("firstNameError").textContent = "Please enter a valid first name";
         firstNameInput.focus();
         isValid = false;
     }
   
     if (!lastName) {
-        document.getElementById("lastNameError").textContent = "Indtast venligst dit efternavn";
+        document.getElementById("lastNameError").textContent = "Please enter your last name";
         lastNameInput.focus();
         isValid = false;
     } else if (!namePattern.test(lastName)) {
-        document.getElementById("lastNameError").textContent = "Indtast venligst et gyldigt efternavn";
+        document.getElementById("lastNameError").textContent = "Please enter a valid last name";
         lastNameInput.focus();
         isValid = false;
     }
   
     if (!age) {
-        document.getElementById("ageError").textContent = "Indtast venligst din alder";
+        document.getElementById("ageError").textContent = "Please enter your age";
         ageInput.focus();
         isValid = false;
     } else if (!agePattern.test(age)) {
-        document.getElementById("ageError").textContent = "Indtast venligst en gyldig alder";
+        document.getElementById("ageError").textContent = "Please enter a valid age";
         ageInput.focus();
         isValid = false;
     }
   
     if (!email) {
-        document.getElementById("emailError").textContent = "Indtast venligst din e-mail";
+        document.getElementById("emailError").textContent = "Please enter your email";
         emailInput.focus();
         isValid = false;
     } else if (!emailPattern.test(email)) {
-        document.getElementById("emailError").textContent = "Indtast venligst en gyldig e-mail";
+        document.getElementById("emailError").textContent = "Please enter a valid email";
         emailInput.focus();
         isValid = false;
     }
   
     if (password.length < 3) {
-        document.getElementById("passwordError").textContent = "Indtast venligst et kodeord med mindst 3 tegn";
+        document.getElementById("passwordError").textContent = "Please enter your password";
         passwordInput.focus();
         isValid = false;
     } else {
@@ -81,7 +81,7 @@ document.querySelector("#create-user").addEventListener("submit", function(event
     }
 
     if (password !== passwordRepeat) {
-        document.getElementById("passwordRepeatError").textContent = "Kodeordene matcher ikke";
+        document.getElementById("passwordRepeatError").textContent = "Passwords do not match";
         passwordRepeatInput.focus();
         isValid = false;
     } else {
